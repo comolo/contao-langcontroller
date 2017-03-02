@@ -23,7 +23,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['languageModuleMapping'] = array
                 'inputType' => 'select',
                 'options_callback' => [\Comolo\LanguageControllerBundle\Dca\ModuleDca::class, 'getLanguageOptions'],
                 'mandatory' => true,
-                'eval'      => ['mandatory' => true, 'style' => 'max-width:150px'],
+                'eval'      => ['mandatory' => true, 'style' => 'max-width:230px'],
             ],
             'module' => [
                 'label'     => &$GLOBALS['TL_LANG']['tl_module']['languageModuleMapping']['module'],
@@ -31,7 +31,7 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['languageModuleMapping'] = array
                 'inputType' => 'select',
                 'options_callback' => [\Comolo\LanguageControllerBundle\Dca\ModuleDca::class, 'getModuleOptions'],
                 'mandatory' => true,
-                'eval'      => ['mandatory' => true, 'style' => 'max-width:150px'],
+                'eval'      => ['mandatory' => true, 'style' => 'max-width:300px'],
             ],
         ],
         'tl_class'     => 'clr',
