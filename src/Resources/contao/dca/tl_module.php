@@ -3,8 +3,8 @@
 /**
  * Palettes
  */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['__selector__'][] = 'langController';
-$GLOBALS['TL_DCA']['tl_module']['palettes']['langController'] = '{title_legend},name,type;{config_legend},languageModuleMapping;{protected_legend:hide},protected;{expert_legend:hide},guests';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['__selector__'][] = 'langcontroller';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['langcontroller'] = '{title_legend},name,type;{config_legend},languageModuleMapping;{protected_legend:hide},protected;{expert_legend:hide},guests';
 
 /**
  * Fields
