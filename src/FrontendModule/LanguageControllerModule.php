@@ -10,7 +10,7 @@ class LanguageControllerModule extends Module
     /**
      * @var string
      */
-    protected $strTemplate = null;
+    protected $strTemplate = '';
 
     /**
      * {@inheritdoc}
@@ -36,9 +36,11 @@ class LanguageControllerModule extends Module
      */
     protected function compile()
     {
-        $mapping = unserialize($this->languageModuleMapping);
+        die('hier');
 
-        var_dump($mapping); exit;
+        #$mapping = unserialize($this->languageModuleMapping);
+
+        #var_dump($mapping); exit;
 
         #return $this->getFrontendModule($id);
     }
