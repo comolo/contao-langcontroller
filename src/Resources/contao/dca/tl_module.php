@@ -11,31 +11,30 @@ $GLOBALS['TL_DCA']['tl_module']['palettes']['langcontroller'] = '{title_legend},
  */
 $GLOBALS['TL_DCA']['tl_module']['fields']['languageModuleMapping'] = array
 (
-    // todo: validate (not two languages)
+    // todo: validate (->not two languages)
     'label'                   => &$GLOBALS['TL_LANG']['tl_module']['languageModuleMapping'],
     'exclude'                 => true,
     'inputType'               => 'multiColumnWizard',
     'eval'                    => array(
         'columnFields' => [
-            'languageCode' => [
+            'language' => [
                 'label'     => &$GLOBALS['TL_LANG']['tl_module']['languageModuleMapping']['languageCode'],
                 'exclude'   => true,
                 'inputType' => 'select',
-                'options'   => ['option1' => 'Option 1'],
+                'options_callback' => [\Comolo\LanguageControllerBundle\Dca\ModuleDca::class, 'getLanguageOptions'],
                 'mandatory' => true,
                 'eval'      => ['mandatory' => true, 'style' => 'max-width:150px'],
             ],
             'module' => [
                 'label'     => &$GLOBALS['TL_LANG']['tl_module']['languageModuleMapping']['module'],
-
                 'exclude'   => true,
                 'inputType' => 'select',
-                'options'   => ['option1' => 'Option 1'],
+                'options_callback' => [\Comolo\LanguageControllerBundle\Dca\ModuleDca::class, 'getModuleOptions'],
                 'mandatory' => true,
                 'eval'      => ['mandatory' => true, 'style' => 'max-width:150px'],
             ],
         ],
         'tl_class'     => 'clr',
     ),
-    'sql'                     => "text NULL"
+    'sql' => "text NULL"
 );
