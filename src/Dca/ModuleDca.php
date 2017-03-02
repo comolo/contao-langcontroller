@@ -6,6 +6,8 @@ use Contao\Database;
 
 class ModuleDca
 {
+    const LANG_FALLBACK = 'fallback';
+
     protected $database;
 
     public function __construct()
@@ -16,7 +18,7 @@ class ModuleDca
     public function getLanguageOptions()
     {
         $languages = [];
-        $languages['fallback'] = 'fallback';
+        $languages[self::LANG_FALLBACK] = self::LANG_FALLBACK;
 
         $result = $this->database->execute('SELECT DISTINCT language FROM tl_page WHERE type=\'root\'');
 
