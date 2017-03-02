@@ -1,28 +1,32 @@
 {
-	"name":"comolo/contao-langcontroller",
-    "type": "symfony-bundle",
-	"description":"",
-	"keywords":["contao", "language", "translation"],
-	"homepage":"https://github.com/comolo/contao-langcontroller",
-	"license":"MIT",
-	"authors":[
-		{
-			"name":"Hendrik Obermayer, Comolo GmbH",
-			"homepage":"https://github.com/henobi",
-			"role":"Developer"
-		}
-	],
-	"require": {
-        "php":">=5.5.0",
-        "contao/contao": "~4.2",
-        "menatwork/contao-multicolumnwizard": "~3.3"
-	},
-    "conflict": {
-        "contao/core": "*"    
-    },
-	"autoload":{
-        "psr-4": {
-            "Comolo\\LanguageControllerBundle\\": "src/"
-        }
-	}
+  "name": "comolo/contao-langcontroller",
+  "type": "symfony-bundle",
+  "description": "",
+  "keywords": [
+    "contao",
+    "language",
+    "translation"
+  ],
+  "homepage": "https://github.com/comolo/contao-langcontroller",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hendrik Obermayer, Comolo GmbH",
+      "homepage": "https://github.com/henobi",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "contao/contao": "~4.2",
+    "menatwork/contao-multicolumnwizard": "~3.3"
+  },
+  "conflict": {
+    "contao/core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Comolo\\LanguageControllerBundle\\": "src/"
+    }
+  }
 }
