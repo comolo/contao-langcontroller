@@ -18,7 +18,7 @@
   ],
   "require": {
     "php": ">=5.5.0",
-    "contao/contao": "~4.2",
+    "contao/core-bundle":"~4.2",
     "menatwork/contao-multicolumnwizard": "~3.3"
   },
   "conflict": {
